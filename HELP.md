@@ -15,3 +15,11 @@ The following guides illustrate how to use some features concretely:
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 
+# FOR BUILDING THE APPLICAITON
+
+* First build the applicaiton (JAVA MAVEN - spring-boot)
+    - command for build 
+    - $mvn dependency:resolve        - for dependency resolve from other lib as mentioned in pom.xml
+    - $mvn spring-boot:run           - test dry run locally at mentioned or default port number (http://localhost:8080/)
+    - $mvn clean package             - Build Applicaiton and create a JAR file for applicaiton execution
+    - $docker-compose up             - For build the docker images test run locally at desired hosting applicaiton endpoints via NGINX (http://localhost/)
